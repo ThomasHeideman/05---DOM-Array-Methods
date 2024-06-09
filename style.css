@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* :root {
     --variable: value;
   } */
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #eee;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -18,4 +20,112 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+  align-items: stretch;
+  border-radius: 6px;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  width: 33%;
+  background-color: #7f7f7f;
+  border-radius: 6px 0 0 6px;
+  gap: 1rem;
+  border: 2px solid #111;
+  border-right: 0;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem 0 1.5rem;
+  background-color: #dddddd;
+  border-radius: 0 6px 6px 0;
+  border: 2px solid #111;
+}
+
+.user-list {
+  max-height: 50vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* .user-list::-webkit-scrollbar {
+    display: none;}
+} */
+
+strong {
+  font-weight: 800;
+}
+
+h2,
+h3 {
+  border-bottom: 2px solid #111;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+h3 {
+  background-color: #fff;
+  font-weight: 300;
+}
+
+.person-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  /* background-color: #f3f3f3; */
+  border: 2px solid;
+  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 2px, rgba(0, 0, 0, 0.16) 0px 1px 2px; */
+}
+.person {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.person-wrapper:last-of-type {
+  margin-bottom: 2.5rem;
+}
+.person img {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border: 2px solid;
+}
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #111;
+  border-radius: 4px;
+  color: #111;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+  transition: ease 300ms;
+  display: flex;
+  justify-content: space-between;
+}
+button:hover {
+  background-color: #111;
+  border-color: #111;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
